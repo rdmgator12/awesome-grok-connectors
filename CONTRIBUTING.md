@@ -19,7 +19,7 @@ If a connector is in the wrong category, submit a PR moving it.
 Tested a connector and have real-world notes? Add a brief field report below the connector entry:
 
 ```markdown
-- [Connector Name](https://link) — Description. *Use case: ...*
+- [Connector Name](https://link) - Description. *Use case: ...*
   > **Field report:** One paragraph on what worked, what didn't, what surprised you. Be specific.
 ```
 
@@ -30,7 +30,7 @@ Tested a connector and have real-world notes? Add a brief field report below the
 - Use cases should be specific and practical, not marketing copy.
 - Only add connectors that are publicly available in Grok (built-in, catalog, or documented at [docs.x.ai/grok/connectors](https://docs.x.ai/grok/connectors)). For general MCP servers not yet in Grok, see [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers).
 - Maintain alphabetical order within categories.
-- Mark connectors maintained by xAI itself with **`X`** after the connector link, before the description separator (e.g., `[Connector](https://link) **\`X\`** — Description.`).
+- Mark connectors maintained by xAI itself with **`X`** after the connector link, before the description separator (e.g., `[Connector](https://link) **\`X\`** - Description.`). Use an ASCII hyphen (`-`) as the separator — `awesome-lint` rejects en/em-dashes.
 
 ## Weekly Updates
 
