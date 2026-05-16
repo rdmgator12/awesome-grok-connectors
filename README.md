@@ -21,7 +21,7 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 >
 > **[Bring Your Own MCP](https://docs.x.ai/grok/connectors#custom-mcp-connectors)** · *MCP Infrastructure*
 >
-> The headline feature of the May 6, 2026 launch isn't any one connector — it's that Grok now speaks Model Context Protocol natively. Point Grok at any reachable MCP server and its tools show up alongside the first-party catalog: homegrown knowledge bases, internal APIs, MCP gateways, vendor servers. That moves Grok from "chatbot with apps" into the same category as Claude Desktop, Claude Code, and ChatGPT's MCP surface — a generic agent client where the tool layer is yours to define. For builders, this is the integration story: ship one MCP server and it works across all four major assistants. For Grok specifically, it closes the enterprise-integration gap that ChatGPT Enterprise and Claude for Work have owned for over a year, and it does so on day one rather than as a v2 retrofit. The built-in connectors (Google Workspace, Microsoft 365, Salesforce, GitHub, Linear, Notion) are the polished surface; BYO MCP is the substrate.
+> The headline feature of the May 6, 2026 launch isn't any one connector — it's that Grok now speaks Model Context Protocol natively. Point Grok at any reachable MCP server and its tools show up alongside the first-party catalog: homegrown knowledge bases, internal APIs, MCP gateways, vendor servers. That moves Grok from "chatbot with apps" into the same category as Claude Desktop, Claude Code, and ChatGPT's MCP surface — a generic agent client where the tool layer is yours to define. For builders, this is the integration story: ship one MCP server and it works across all four major assistants. For Grok specifically, it closes the enterprise-integration gap that ChatGPT Enterprise and Claude for Work have owned for over a year, and it does so on day one rather than as a v2 retrofit. The built-in connectors (Google Workspace, Microsoft 365, and Salesforce) plus the catalog set (GitHub, Linear, Notion, HubSpot, Slack) are the polished surface; BYO MCP is the substrate.
 
 ---
 
@@ -54,7 +54,7 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 
 ## CRM and Sales
 
-- [HubSpot](https://docs.x.ai/integrations/hubspot-mcp-setup) - Read-only access to HubSpot CRM data including contacts, companies, deals, and tickets. *Use case: Summarizing open deals over a threshold, surfacing account activity, ranking pipeline by stage, drafting outreach from deal context.*
+- [HubSpot](https://www.hubspot.com) - Read-only access to HubSpot CRM data including contacts, companies, deals, and tickets via the [xAI MCP setup guide](https://docs.x.ai/integrations/hubspot-mcp-setup). *Use case: Summarizing open deals over a threshold, surfacing account activity, ranking pipeline by stage, drafting outreach from deal context.*
 - [Salesforce](https://www.salesforce.com) **`X`** - Explore Salesforce objects, query records, and create or update CRM data. *Use case: Pulling account history, updating opportunity stages from chat, querying custom objects, generating call-prep briefs.*
 
 
@@ -92,7 +92,7 @@ Looking for MCP servers to connect? See the awesome-mcp-servers list in the Rela
 - [awesome-perplexity-connectors](https://github.com/rdmgator12/Perplexity-Connectors-awesome-list-) - Perplexity AI connectors directory.
 - [awesome-mistral-connectors](https://github.com/rdmgator12/awesome-mistral-connectors) - Mistral Le Chat connectors directory.
 - [awesome-lm-studio-connectors](https://github.com/rdmgator12/awesome-lm-studio-connectors) - LM Studio plugins and integrations directory.
-- [awesome-chatgpt-apps](https://github.com/rdmgator12/Chtgpt-Apps-Awesome-List) - OpenAI ChatGPT apps and connectors directory.
+- [awesome-chatgpt-apps](https://github.com/rdmgator12/awesome-chatgpt-apps) - OpenAI ChatGPT apps and connectors directory.
 - [awesome-gemini-extensions](https://github.com/rdmgator12/Gemini-Awesome-List-) - Google Gemini CLI extensions directory.
 - [awesome-lovable-connectors](https://github.com/rdmgator12/awesome-lovable-connectors) - Lovable platform connectors directory.
 - [awesome-healthcare-mcp-servers](https://github.com/rdmgator12/awesome-healthcare-mcp-servers) - Healthcare-focused MCP servers directory.
