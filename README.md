@@ -14,7 +14,7 @@ Connectors marked with **`X`** are built and maintained by xAI.
 
 This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-> This is an independent, community-maintained list. Not affiliated with, endorsed by, or sponsored by xAI Corp. "Grok" and related marks are the property of xAI Corp. Each connector is the property of its respective owner.
+> **Disclaimer:** This is a free, public, community-maintained list. Not affiliated with, endorsed by, or sponsored by Grok, xAI Corp, SpaceX, or any Musk-affiliated entity. "Grok" and related marks are the property of xAI Corp. Each connector is the property of its respective owner. No fees, no paid placement, no commercial relationship with any vendor listed.
 
 > [!TIP]
 > ### Connector of the Week — May 16, 2026

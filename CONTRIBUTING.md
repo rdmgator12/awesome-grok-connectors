@@ -2,7 +2,7 @@
 
 This list tracks every connector available in [Grok](https://grok.com/connectors) — xAI's built-in connectors, the third-party Connector Catalog, and the Bring Your Own MCP developer story. Contributions welcome.
 
-> This is an independent, community-maintained project. Not affiliated with, endorsed by, or sponsored by xAI Corp.
+> **Disclaimer:** This is a free, public, community-maintained project. Not affiliated with, endorsed by, or sponsored by Grok, xAI Corp, SpaceX, or any Musk-affiliated entity. No fees, no paid placement, no commercial relationship with any vendor listed.
 
 ## What You Can Contribute
 
