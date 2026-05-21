@@ -1,12 +1,14 @@
 # Awesome List for Grok Connectors [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A directory of the publicly documented connectors in xAI's [Grok Connectors](https://grok.com/connectors) — 14 integrations plus Bring Your Own MCP, organized by category with descriptions and use cases.
+> A directory of the publicly documented connectors and skills in xAI's [Grok Connectors](https://grok.com/connectors) and Grok Skills — 14 connector integrations plus 5 built-in skills plus Bring Your Own MCP, organized by category with descriptions and use cases.
 
-**Last updated:** May 16, 2026 | **Total connectors:** 14 | **Categories:** 6 | **BYO MCP:** supported
+**Last updated:** May 21, 2026 | **Total connectors:** 14 | **Built-in skills:** 5 | **Categories:** 6 | **BYO MCP:** supported
 
 Grok connectors are OAuth-authenticated integrations that let Grok read and write across your everyday tools directly inside the chat — email, calendar, files, CRM, code, and project management — without copy-pasting. They launched May 6, 2026 on Grok Web, iOS, and Android. The same release added Bring Your Own MCP support, making Grok the fourth major assistant (after Claude, ChatGPT, and Gemini) to ship a [Model Context Protocol](https://modelcontextprotocol.io) client surface for custom servers.
 
-> **Scope note:** v0.1.0 covers connectors explicitly named in xAI's public documentation and launch announcement (built-in set + the five catalog connectors with dedicated setup guides or public callouts). The full catalog requires a logged-in Grok session to enumerate; additional catalog entries will be folded in as they're publicly documented.
+[Grok Skills](https://x.ai/news/grok-skills) launched May 18, 2026 as a second primitive: persistent expertise that Grok remembers across every conversation. Each account ships with built-in skills for office documents (Word, PowerPoint, Excel, PDF) plus a Skill Creator for building your own. Skills run on Grok 4.3 across web, iOS, and Android.
+
+> **Scope note:** This list covers connectors and skills explicitly named in xAI's public documentation and launch announcements. xAI's May 11, 2026 follow-up announcement referenced "20+ connectors" — the full catalog (beyond the named built-in set, the named catalog connectors with dedicated setup guides, and the public callouts) requires a logged-in Grok session to enumerate. Additional catalog entries will be folded in as they're publicly documented.
 
 For more information, see the [Connectors Documentation](https://docs.x.ai/grok/connectors), the [Connector Catalog](https://docs.x.ai/grok/connectors/catalog), and the [launch announcement](https://x.ai/news/grok-connectors).
 
@@ -17,11 +19,11 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 > **Disclaimer:** This is a free, public, community-maintained list. Not affiliated with, endorsed by, or sponsored by Grok, xAI Corp, SpaceX, or any Musk-affiliated entity. "Grok" and related marks are the property of xAI Corp. Each connector is the property of its respective owner. No fees, no paid placement, no commercial relationship with any vendor listed.
 
 > [!TIP]
-> ### Connector of the Week — May 16, 2026
+> ### Connector of the Week — May 21, 2026
 >
-> **[Bring Your Own MCP](https://docs.x.ai/grok/connectors#custom-mcp-connectors)** · *MCP Infrastructure*
+> **Grok Skills** · *Persistent Expertise*
 >
-> The headline feature of the May 6, 2026 launch isn't any one connector — it's that Grok now speaks Model Context Protocol natively. Point Grok at any reachable MCP server and its tools show up alongside the first-party catalog: homegrown knowledge bases, internal APIs, MCP gateways, vendor servers. That moves Grok into the same category as Claude Desktop, Claude Code, and ChatGPT's MCP surface — a generic agent client where the tool layer is yours to define. For builders, this is the integration story: ship one MCP server and it works across all four major assistants. The built-in connectors (Google Workspace, Microsoft 365, and Salesforce) plus the catalog set (GitHub, Linear, Notion, HubSpot, Slack) are the polished surface; BYO MCP is the substrate.
+> Skills landed May 18, 2026 and reframe what Grok is — no longer just a chatbot with tools, but a chatbot with persistent expertise that survives across every conversation. Five built-in skills ship out of the box (Word, PowerPoint, Excel, PDF, and a Skill Creator), and any custom skill you build gets saved to a personal library for indefinite reuse. The architectural read: connectors are the I/O layer (where data lives), skills are the procedural layer (what to do with it). Together they push Grok into the same product space as ChatGPT's Custom GPTs and Claude's Skill system. Skills are live on Grok 4.3 across grok.com, iOS, and Android — covered in the Skills section below.
 
 ---
 
@@ -34,6 +36,7 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 - [Documents and Files](#documents-and-files)
 - [Productivity](#productivity)
 - [Bring Your Own MCP](#bring-your-own-mcp)
+- [Skills](#skills)
 - [Related](#related)
 
 ---
@@ -85,14 +88,29 @@ For setup, authentication patterns, and local-server tunneling guidance, see the
 Looking for MCP servers to connect? See the awesome-mcp-servers list in the Related section below for a broad community-maintained directory that should work with Grok's BYO MCP surface.
 
 
+## Skills
+
+Grok Skills are persistent instruction sets that Grok remembers across every conversation. Launched May 18, 2026 on Grok 4.3, they ship as built-in skills out of the box, support custom-skill creation through conversation or file upload, and can be overridden — your version always takes priority. Skills are a separate primitive from connectors: connectors are the I/O layer (where the data lives), skills are the procedural layer (what to do with it).
+
+Skills marked with **`X`** are built and maintained by xAI.
+
+- [Word Documents](https://www.microsoft.com/microsoft-365/word) **`X`** - Create and edit .docx with full formatting — headings, tables, bullet points, and consistent styling. *Use case: Generating polished invoices, contracts, proposals, and resumes from a single chat-side instruction.*
+- [Presentations](https://www.microsoft.com/microsoft-365/powerpoint) **`X`** - Build slide decks from scratch with visual hierarchy and speaker notes. *Use case: Pitch decks, quarterly reviews, workshop materials with exercises, frameworks, and takeaways.*
+- [Spreadsheets](https://www.microsoft.com/microsoft-365/excel) **`X`** - Generate formatted spreadsheets with formulas, color-coded sections, and clear structure. Analyze data inline. *Use case: Budgets, dashboards, forecasts, and monthly trackers with income/expenses/savings projections.*
+- [PDFs](https://www.adobe.com/acrobat/about-adobe-pdf.html) **`X`** - Create, merge, split, and extract from PDFs. Style and format for share-ready output. *Use case: Polished PDF reports, proposals, and research papers formatted for conference or stakeholder submission.*
+- [Skill Creator](https://grok.com) **`X`** - Build new custom skills through conversation. *Use case: Capture a perfected workflow once and reuse it across every future chat — describe it, upload a file, or write it from scratch.*
+
+
 ## Related
 
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Community-maintained directory of MCP servers across all clients.
 - [awesome-claude-connectors](https://github.com/rdmgator12/awesome-claude-connectors) - Anthropic Claude connectors directory (398+ entries).
+- [awesome-claude-plugins](https://github.com/rdmgator12/awesome-claude-plugins) - Claude Code plugins directory.
 - [awesome-perplexity-connectors](https://github.com/rdmgator12/Perplexity-Connectors-awesome-list-) - Perplexity AI connectors directory.
 - [awesome-mistral-connectors](https://github.com/rdmgator12/awesome-mistral-connectors) - Mistral Le Chat connectors directory.
 - [awesome-lm-studio-connectors](https://github.com/rdmgator12/awesome-lm-studio-connectors) - LM Studio plugins and integrations directory.
 - [awesome-chatgpt-apps](https://github.com/rdmgator12/awesome-chatgpt-apps) - OpenAI ChatGPT apps and connectors directory.
 - [awesome-gemini-extensions](https://github.com/rdmgator12/Gemini-Awesome-List-) - Google Gemini CLI extensions directory.
+- [awesome-microsoft-copilot-connectors](https://github.com/rdmgator12/awesome-microsoft-copilot-connectors) - Microsoft Copilot connectors directory.
 - [awesome-lovable-connectors](https://github.com/rdmgator12/awesome-lovable-connectors) - Lovable platform connectors directory.
 - [awesome-healthcare-mcp-servers](https://github.com/rdmgator12/awesome-healthcare-mcp-servers) - Healthcare-focused MCP servers directory.
