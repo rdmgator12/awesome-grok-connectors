@@ -2,7 +2,7 @@
 
 > A directory of the publicly documented connectors and skills in xAI's [Grok Connectors](https://grok.com/connectors) and Grok Skills — 14 connector integrations plus 5 built-in skills plus Bring Your Own MCP, organized by category with descriptions and use cases.
 
-**Version:** v0.1.5 | **Last updated:** May 21, 2026 | **Total connectors:** 14 | **Built-in skills:** 5 | **Categories:** 6 | **BYO MCP:** supported
+**Version:** v0.1.5 | **Last updated:** June 5, 2026 | **Total connectors:** 14 | **Built-in skills:** 5 | **Categories:** 6 | **BYO MCP:** supported
 
 See [CHANGELOG.md](CHANGELOG.md) for the full release history.
 
