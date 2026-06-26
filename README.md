@@ -1,8 +1,8 @@
 # Awesome List for Grok Connectors [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A directory of the publicly documented connectors and skills in xAI's [Grok Connectors](https://grok.com/connectors) and Grok Skills — 14 connector integrations plus 5 built-in skills plus Bring Your Own MCP, organized by category with descriptions and use cases.
+> A directory of the publicly documented connectors and skills in xAI's [Grok Connectors](https://grok.com/connectors) and Grok Skills — 15 connector integrations plus 5 built-in skills plus Bring Your Own MCP, organized by category with descriptions and use cases.
 
-**Version:** v0.1.5 | **Last updated:** June 5, 2026 | **Total connectors:** 14 | **Built-in skills:** 5 | **Categories:** 6 | **BYO MCP:** supported
+**Version:** v0.1.6 | **Last updated:** June 26, 2026 | **Total connectors:** 15 | **Built-in skills:** 5 | **Categories:** 7 | **BYO MCP:** supported
 
 See [CHANGELOG.md](CHANGELOG.md) for the full release history.
 
@@ -21,11 +21,11 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 > **Disclaimer:** This is a free, public, community-maintained list. Not affiliated with, endorsed by, or sponsored by Grok, xAI Corp, SpaceX, or any Musk-affiliated entity. "Grok" and related marks are the property of xAI Corp. Each connector is the property of its respective owner. No fees, no paid placement, no commercial relationship with any vendor listed.
 
 > [!TIP]
-> ### Connector of the Week — May 21, 2026
+> ### Connector of the Week — June 26, 2026
 >
-> **Grok Skills** · *Persistent Expertise*
+> **Interactive Brokers** · *Finance and Trading*
 >
-> Skills landed May 18, 2026 and reframe what Grok is — no longer just a chatbot with tools, but a chatbot with persistent expertise that survives across every conversation. Five built-in skills ship out of the box (Word, PowerPoint, Excel, PDF, and a Skill Creator), and any custom skill you build gets saved to a personal library for indefinite reuse. The architectural read: connectors are the I/O layer (where data lives), skills are the procedural layer (what to do with it). Together they push Grok into the same product space as ChatGPT's Custom GPTs and Claude's Skill system. Skills are live on Grok 4.3 across grok.com, iOS, and Android — covered in the Skills section below.
+> Announced June 25, 2026, the Interactive Brokers connector is Grok's first finance integration and a clean example of an agentic, human-in-the-loop connector. Link an existing IBKR account in minutes — no new account, no passwords or API keys shared — then ask Grok to analyze your portfolio, model sector and region exposures, research market scenarios, and draft order instructions across equities, ETFs, options, and futures. Nothing executes automatically: every AI-generated instruction lands in a dedicated AI Instructions tab for your review and approval before it reaches the market. It ships alongside parallel IBKR integrations for Claude and ChatGPT, a sign that brokerages are standardizing on AI connector marketplaces as the link layer. Listed under Finance and Trading below.
 
 ---
 
@@ -36,9 +36,11 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 - [CRM and Sales](#crm-and-sales)
 - [Development Tools](#development-tools)
 - [Documents and Files](#documents-and-files)
+- [Finance and Trading](#finance-and-trading)
 - [Productivity](#productivity)
 - [Bring Your Own MCP](#bring-your-own-mcp)
 - [Skills](#skills)
+- [Beyond the Chat](#beyond-the-chat)
 - [Related](#related)
 
 ---
@@ -76,6 +78,11 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 - [SharePoint](https://www.microsoft.com/microsoft-365/sharepoint) **`X`** - Search, read, synthesize, and (with write permissions) edit files, lists, and pages across SharePoint sites. *Use case: Organization-wide document search, editing pages and lists, surfacing the latest version of policies, generating reports from SharePoint data.*
 
 
+## Finance and Trading
+
+- [Interactive Brokers](https://www.interactivebrokers.com) - Link an existing IBKR account to analyze your portfolio, model exposures, research markets, and generate reviewable order instructions across equities, ETFs, options, and futures in natural language. No new account, no passwords or API keys shared. *Use case: Surfacing portfolio exposures and concentration, scenario-modeling sector and region risk, drafting hedges and options strategies as order instructions held in an AI Instructions tab for your approval before execution.*
+
+
 ## Productivity
 
 - [Notion](https://www.notion.so) - Search and edit pages, databases, and wikis across personal or team Notion workspaces. *Use case: Querying the team wiki, drafting and updating pages, querying structured Notion databases, summarizing project notes.*
@@ -101,6 +108,15 @@ Skills marked with **`X`** are built and maintained by xAI.
 - [Spreadsheets](https://www.microsoft.com/microsoft-365/excel) **`X`** - Generate formatted spreadsheets with formulas, color-coded sections, and clear structure. Analyze data inline. *Use case: Budgets, dashboards, forecasts, and monthly trackers with income/expenses/savings projections.*
 - [PDFs](https://www.adobe.com/acrobat/about-adobe-pdf.html) **`X`** - Create, merge, split, and extract from PDFs. Style and format for share-ready output. *Use case: Polished PDF reports, proposals, and research papers formatted for conference or stakeholder submission.*
 - [Skill Creator](https://grok.com) **`X`** - Build new custom skills through conversation. *Use case: Capture a perfected workflow once and reuse it across every future chat — describe it, upload a file, or write it from scratch.*
+
+
+## Beyond the Chat
+
+This list catalogs what Grok can connect *to* inside a conversation. In June 2026 xAI also shipped two adjacent integration surfaces that fall outside that scope but are worth knowing.
+
+**Microsoft Office add-ins.** [Grok for Word](https://x.ai/news/introducing-word-addin) (June 18), Grok for PowerPoint (June 16), and Grok for Excel embed Grok *inside* the Office apps as free Microsoft 365 add-ins. They can themselves leverage connectors — for example, drafting from your SharePoint or Google Drive. These are distinct from the chat-side document Skills of the same names listed above: Skills generate files chat-side, add-ins put Grok in the app.
+
+**Grok Build and the Plugin Marketplace.** [Grok Build](https://x.ai/news) is xAI's terminal coding agent; its [Plugin Marketplace](https://x.ai/news/grok-plugin-marketplace) (June 11, open repo `xai-org/plugin-marketplace`) bundles skills, commands, agents, hooks, MCP servers, and LSPs, launching with plugins from MongoDB, Vercel, Sentry, Chrome DevTools, Cloudflare, and Superpowers. That plugin ecosystem is a separate primitive from chat connectors and would belong in a sibling list.
 
 
 ## Related

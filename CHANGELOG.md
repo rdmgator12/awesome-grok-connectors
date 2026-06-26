@@ -4,6 +4,19 @@ All notable changes to this list are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows [SemVer](https://semver.org/spec/v2.0.0.html). Pre-1.0.0, minor-level changes can include additions and structural moves; patch-level changes are corrections, polish, and lint fixes.
 
+## [0.1.6] - 2026-06-26
+
+### Added
+- New `Finance and Trading` category with the **Interactive Brokers** connector — xAI's first finance integration, announced June 25, 2026. OAuth account link (no API keys shared), portfolio analysis, exposure modeling, and reviewable order instructions across equities, ETFs, options, and futures, with a human-in-the-loop AI Instructions approval tab. Total connectors 14 → 15; categories 6 → 7.
+- New `Beyond the Chat` section noting two adjacent June 2026 xAI integration surfaces that fall outside this list's connector/skill scope: the Microsoft Office add-ins (Grok for Word June 18, PowerPoint June 16, Excel) and Grok Build + its Plugin Marketplace (June 11, `xai-org/plugin-marketplace`).
+
+### Changed
+- Connector of the Week rotated from `Grok Skills` (5/21) to `Interactive Brokers` (6/26), reflecting the June 25 finance-connector launch.
+- README header bumped: version v0.1.6, `Last updated` June 26, 2026, total connectors 15, categories 7.
+
+### Notes
+- Verified against the official Connectors docs (crawled 2026-06-14) and Connector Catalog page: the built-in connector set and the only catalog entry with a dedicated setup guide (HubSpot) are unchanged since the June 5 sweep. Interactive Brokers is the one newly name-documented catalog connector via its dedicated x.ai/news announcement. The full catalog beyond named entries still requires a logged-in Grok session to enumerate.
+
 ## [0.1.5] - 2026-05-21
 
 ### Added
