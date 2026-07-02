@@ -4,6 +4,23 @@ All notable changes to this list are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows [SemVer](https://semver.org/spec/v2.0.0.html). Pre-1.0.0, minor-level changes can include additions and structural moves; patch-level changes are corrections, polish, and lint fixes.
 
+## [0.1.7] - 2026-07-02
+
+### Added
+- `Beyond the Chat` gained a third adjacent surface: **Voice Agent Builder** (July 1, 2026, beta) — xAI's no-code platform for production voice agents on Grok Voice, reusing the connector family (Google Calendar, Outlook Calendar, Linear, Notion, Google Drive, OneDrive) plus custom APIs and MCP servers, with SIP telephony and knowledge collections.
+- `Bring Your Own MCP` note: X launched an official hosted MCP server June 30, 2026 (docs.x.com/mcp) exposing 200+ X API endpoints to MCP clients — the highest-profile public server a Grok user can add as a custom connector.
+
+### Changed
+- Connector of the Week rotated from `Interactive Brokers` (6/26) to the `X hosted MCP server` (7/2) — the week's one genuinely connectable launch, arriving through the BYO MCP door.
+- Related: corrected the stale `awesome-claude-connectors` entry count (398+ → 500+).
+- README header bumped: version v0.1.7, `Last updated` July 2, 2026. Connector totals unchanged (15).
+
+### Fixed
+- Replaced the dead Connector Catalog link (`docs.x.ai/grok/connectors/catalog` now 404s and is gone from the docs sitemap) with the in-product catalog entry point at grok.com/connectors.
+
+### Notes
+- Verified live against docs.x.ai/grok/connectors (fetched 2026-07-02): built-in connector set unchanged, HubSpot still the only catalog entry with a dedicated setup guide. No connector additions or removals this window; total stays 15.
+
 ## [0.1.6] - 2026-06-26
 
 ### Added

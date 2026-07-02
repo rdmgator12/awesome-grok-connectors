@@ -2,7 +2,7 @@
 
 > A directory of the publicly documented connectors and skills in xAI's [Grok Connectors](https://grok.com/connectors) and Grok Skills — 15 connector integrations plus 5 built-in skills plus Bring Your Own MCP, organized by category with descriptions and use cases.
 
-**Version:** v0.1.6 | **Last updated:** June 26, 2026 | **Total connectors:** 15 | **Built-in skills:** 5 | **Categories:** 7 | **BYO MCP:** supported
+**Version:** v0.1.7 | **Last updated:** July 2, 2026 | **Total connectors:** 15 | **Built-in skills:** 5 | **Categories:** 7 | **BYO MCP:** supported
 
 See [CHANGELOG.md](CHANGELOG.md) for the full release history.
 
@@ -12,7 +12,7 @@ Grok connectors are OAuth-authenticated integrations that let Grok read and writ
 
 > **Scope note:** This list covers connectors and skills explicitly named in xAI's public documentation and launch announcements. xAI's May 11, 2026 follow-up announcement referenced "20+ connectors" — the full catalog (beyond the named built-in set, the named catalog connectors with dedicated setup guides, and the public callouts) requires a logged-in Grok session to enumerate. Additional catalog entries will be folded in as they're publicly documented.
 
-For more information, see the [Connectors Documentation](https://docs.x.ai/grok/connectors), the [Connector Catalog](https://docs.x.ai/grok/connectors/catalog), and the [launch announcement](https://x.ai/news/grok-connectors).
+For more information, see the [Connectors Documentation](https://docs.x.ai/grok/connectors), the in-product catalog at [grok.com/connectors](https://grok.com/connectors), and the [launch announcement](https://x.ai/news/grok-connectors).
 
 Connectors marked with **`X`** are built and maintained by xAI.
 
@@ -21,11 +21,11 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 > **Disclaimer:** This is a free, public, community-maintained list. Not affiliated with, endorsed by, or sponsored by Grok, xAI Corp, SpaceX, or any Musk-affiliated entity. "Grok" and related marks are the property of xAI Corp. Each connector is the property of its respective owner. No fees, no paid placement, no commercial relationship with any vendor listed.
 
 > [!TIP]
-> ### Connector of the Week — June 26, 2026
+> ### Connector of the Week — July 2, 2026
 >
-> **Interactive Brokers** · *Finance and Trading*
+> **X (hosted MCP server)** · *Bring Your Own MCP*
 >
-> Announced June 25, 2026, the Interactive Brokers connector is Grok's first finance integration and a clean example of an agentic, human-in-the-loop connector. Link an existing IBKR account in minutes — no new account, no passwords or API keys shared — then ask Grok to analyze your portfolio, model sector and region exposures, research market scenarios, and draft order instructions across equities, ETFs, options, and futures. Nothing executes automatically: every AI-generated instruction lands in a dedicated AI Instructions tab for your review and approval before it reaches the market. It ships alongside parallel IBKR integrations for Claude and ChatGPT, a sign that brokerages are standardizing on AI connector marketplaces as the link layer. Listed under Finance and Trading below.
+> On June 30, 2026, X shipped an official hosted MCP server exposing 200+ X API endpoints — posts, search, users, bookmarks, trends — to any MCP-compatible client, with Grok, Claude, and Cursor named at launch. For Grok users it's the highest-profile public server you can add through the BYO MCP surface (grok.com/connectors → New Connector → Custom); docs live at [docs.x.com/mcp](https://docs.x.com/mcp). A catalog-grade first-party integration arriving through the custom-connector door rather than the built-in list — exactly the pattern BYO MCP was built for. Details in the Bring Your Own MCP section below.
 
 ---
 
@@ -94,6 +94,8 @@ Grok supports custom Model Context Protocol servers. Any MCP server reachable ov
 
 For setup, authentication patterns, and local-server tunneling guidance, see the Custom MCP connectors documentation linked from the launch post above.
 
+The highest-profile public server you can add this way: X's official hosted MCP server (launched June 30, 2026), exposing 200+ X API endpoints — posts, search, users, bookmarks, trends — documented at [docs.x.com/mcp](https://docs.x.com/mcp).
+
 Looking for MCP servers to connect? See the awesome-mcp-servers list in the Related section below for a broad community-maintained directory that should work with Grok's BYO MCP surface.
 
 
@@ -112,17 +114,19 @@ Skills marked with **`X`** are built and maintained by xAI.
 
 ## Beyond the Chat
 
-This list catalogs what Grok can connect *to* inside a conversation. In June 2026 xAI also shipped two adjacent integration surfaces that fall outside that scope but are worth knowing.
+This list catalogs what Grok can connect *to* inside a conversation. In June and July 2026 xAI also shipped three adjacent integration surfaces that fall outside that scope but are worth knowing.
 
 **Microsoft Office add-ins.** [Grok for Word](https://x.ai/news/introducing-word-addin) (June 18), Grok for PowerPoint (June 16), and Grok for Excel embed Grok *inside* the Office apps as free Microsoft 365 add-ins. They can themselves leverage connectors — for example, drafting from your SharePoint or Google Drive. These are distinct from the chat-side document Skills of the same names listed above: Skills generate files chat-side, add-ins put Grok in the app.
 
 **Grok Build and the Plugin Marketplace.** [Grok Build](https://x.ai/news) is xAI's terminal coding agent; its [Plugin Marketplace](https://x.ai/news/grok-plugin-marketplace) (June 11, open repo `xai-org/plugin-marketplace`) bundles skills, commands, agents, hooks, MCP servers, and LSPs, launching with plugins from MongoDB, Vercel, Sentry, Chrome DevTools, Cloudflare, and Superpowers. That plugin ecosystem is a separate primitive from chat connectors and would belong in a sibling list.
 
+**Voice Agent Builder.** [Voice Agent Builder](https://x.ai/news/grok-voice-agent-builder) (July 1, beta) is xAI's no-code platform for building production voice agents on Grok Voice. It reuses the connector family in a third surface: voice agents can book into Google Calendar or Outlook Calendar, manage Linear and Notion tickets, pull files from Google Drive and OneDrive, and wire to custom APIs and MCP servers — with SIP telephony, knowledge collections, guardrails, and $0.05/min pricing.
+
 
 ## Related
 
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Community-maintained directory of MCP servers across all clients.
-- [awesome-claude-connectors](https://github.com/rdmgator12/awesome-claude-connectors) - Anthropic Claude connectors directory (398+ entries).
+- [awesome-claude-connectors](https://github.com/rdmgator12/awesome-claude-connectors) - Anthropic Claude connectors directory (500+ entries).
 - [awesome-claude-plugins](https://github.com/rdmgator12/awesome-claude-plugins) - Claude Code plugins directory.
 - [awesome-perplexity-connectors](https://github.com/rdmgator12/Perplexity-Connectors-awesome-list-) - Perplexity AI connectors directory.
 - [awesome-mistral-connectors](https://github.com/rdmgator12/awesome-mistral-connectors) - Mistral Le Chat connectors directory.
