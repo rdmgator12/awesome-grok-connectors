@@ -12,7 +12,7 @@ Grok connectors are OAuth-authenticated integrations that let Grok read and writ
 
 > **Scope note:** This list covers connectors and skills explicitly named in xAI's public documentation and launch announcements. xAI's May 11, 2026 follow-up announcement referenced "20+ connectors" — the full catalog (beyond the named built-in set, the named catalog connectors with dedicated setup guides, and the public callouts) requires a logged-in Grok session to enumerate. Additional catalog entries will be folded in as they're publicly documented.
 
-For more information, see the [Connectors Documentation](https://docs.x.ai/grok/connectors), the in-product catalog at [grok.com/connectors](https://grok.com/connectors), and the [launch announcement](https://x.ai/news/grok-connectors).
+For more information, see the [Connectors Documentation](https://docs.x.ai/grok/connectors), the in-product catalog at grok.com/connectors (linked above), and the [launch announcement](https://x.ai/news/grok-connectors).
 
 Connectors marked with **`X`** are built and maintained by xAI.
 
@@ -25,7 +25,7 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 >
 > **X (hosted MCP server)** · *Bring Your Own MCP*
 >
-> On June 30, 2026, X shipped an official hosted MCP server exposing 200+ X API endpoints — posts, search, users, bookmarks, trends — to any MCP-compatible client, with Grok, Claude, and Cursor named at launch. For Grok users it's the highest-profile public server you can add through the BYO MCP surface (grok.com/connectors → New Connector → Custom); docs live at [docs.x.com/mcp](https://docs.x.com/mcp). A catalog-grade first-party integration arriving through the custom-connector door rather than the built-in list — exactly the pattern BYO MCP was built for. Details in the Bring Your Own MCP section below.
+> On June 30, 2026, X shipped an official hosted MCP server exposing 200+ X API endpoints — posts, search, users, bookmarks, trends — to any MCP-compatible client, with Grok, Claude, and Cursor named at launch. For Grok users it's the highest-profile public server you can add through the BYO MCP surface (grok.com/connectors → New Connector → Custom); docs live at docs.x.com/mcp. A catalog-grade first-party integration arriving through the custom-connector door rather than the built-in list — exactly the pattern BYO MCP was built for. Details and link in the Bring Your Own MCP section below.
 
 ---
 
