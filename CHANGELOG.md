@@ -4,6 +4,19 @@ All notable changes to this list are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows [SemVer](https://semver.org/spec/v2.0.0.html). Pre-1.0.0, minor-level changes can include additions and structural moves; patch-level changes are corrections, polish, and lint fixes.
 
+## [0.1.8] - 2026-07-21
+
+### Added
+- `Beyond the Chat` expanded: **Grok for Excel** (July 20) and **Grok for Outlook** (July 21) add-ins with dated links; **Automations in Grok** (July 16) as a scheduling layer over existing connectors; **Grok Build open source** (July 15); **Grok 4.5** (July 16) as the current model runtime note.
+- Related: [anthropic-in-public](https://github.com/rdmgator12/anthropic-in-public) and [xai-in-public](https://github.com/rdmgator12/xai-in-public) — independent public-talks archives (sister projects).
+
+### Changed
+- Connector of the Week rotated from `X hosted MCP server` (7/2) to **Automations in Grok** (7/21) — no new named connector this window; Automations is the surface that makes the existing connector set recurring.
+- README header bumped: version v0.1.8, `Last updated` July 21, 2026. Connector totals unchanged (15).
+
+### Notes
+- Verified live against docs.x.ai/grok/connectors (fetched 2026-07-21): built-in table still Gmail & Google Calendar, Google Drive, OneDrive, Outlook Mail & Calendar, Microsoft Teams, SharePoint, Salesforce. No new publicly named catalog connector with a dedicated setup guide beyond HubSpot + Interactive Brokers (announcement path). Full catalog still requires a logged-in Grok session.
+
 ## [0.1.7] - 2026-07-02
 
 ### Added
