@@ -4,6 +4,28 @@ All notable changes to this list are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows [SemVer](https://semver.org/spec/v2.0.0.html). Pre-1.0.0, minor-level changes can include additions and structural moves; patch-level changes are corrections, polish, and lint fixes.
 
+## [0.2.0] - 2026-07-23
+
+### Added
+- **Full in-app catalog enumerated for the first time** — 15 new connectors (15 → 30): **X Ads**, **Stripe**, **Box**, **Canva**, **Vercel**, **Google Cloud BigQuery**, **Excalidraw**, **Mixpanel**, **S&P Global**, **Webull**, **Calendly**, **Figma**, **Gamma**, **HyperFrames by HeyGen**, **Meltwater**. Method: tile-by-tile modal capture from a logged-in grok.com/connectors consumer session (browser automation + same-session manual paste); raw snapshot at `data/grok-catalog-2026-07-23.md`. This resolves the "20+ connectors" scope gap carried since May — the catalog has 26 tiles.
+- New **`C`** marker: third-party in-app-catalog tiles — hosted MCP servers xAI surfaces but does not build or maintain. Applied to the 15 new entries plus GitHub, Linear, Notion, HubSpot, and Interactive Brokers.
+- **MCP server endpoints** recorded per catalog entry (the in-app detail view exposes them — e.g. `mcp.stripe.com`, `api.githubcopilot.com/mcp/x/all`, `api.ibkr.com/v1/api/mcp`, `kfinance.kensho.com/integrations/mcp`). The catalog is MCP-based end to end; this list now documents the endpoints.
+- Three new categories: **Advertising**, **Analytics**, **Design and Creative** (7 → 10). House placement follows function; the catalog's own rail/modal labels are preserved in the data snapshot.
+- GitHub entry description upgraded to the catalog's real capability text (repos, code search, file trees, branches/releases/issues/PRs, notifications, starring/pushing).
+
+### Changed
+- Connector of the Week rotated from `Automations in Grok` (7/21) to **X Ads** (7/23) — the headliner of the catalog enumeration, pairing with the same-week Grok-in-Ads-Manager beta (Beyond the Chat).
+- Scope note rewritten: catalog now enumerated, not estimated; documents the MCP substrate and the Business/Enterprise provisioning nuance (OneDrive/SharePoint/Salesforce absent from a consumer picker but current in the docs built-in table — entries stay).
+- Skill Creator link upgraded `grok.com` → `grok.com/skills` (verified live: the in-app Skills tab routes there; 5 built-ins confirmed with live descriptions).
+- Beyond the Chat: Grok-in-Ads-Manager paragraph now cross-references the X Ads connector as its chat-side mirror.
+- README header: v0.2.0, totals 30 connectors / 10 categories.
+
+### Notes
+- **Slack** is absent from BOTH the in-app catalog and the docs built-in table (its source was a launch callout) — carried as a removal candidate for next sweep's two-surface test. Not removed this pass per the two-surface rule.
+- Linear and HubSpot modal endpoints not captured this pass (no server URL recorded for them) — enrich next sweep.
+- The in-app modals show the third-party boilerplate on every tile including xAI built-ins, so it cannot classify first- vs third-party; the docs.x.ai built-in table remains the `X`-marker authority.
+- Personal/custom BYO MCP connectors visible in a logged-in session (Installed section) are out of scope for the list.
+
 ## [0.1.9] - 2026-07-23
 
 ### Added

@@ -1,8 +1,8 @@
 # Awesome List for Grok Connectors [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Last Commit](https://img.shields.io/github/last-commit/rdmgator12/awesome-grok-connectors)](https://github.com/rdmgator12/awesome-grok-connectors/commits/main)
 
-> A directory of the publicly documented connectors and skills in xAI's [Grok Connectors](https://grok.com/connectors) and Grok Skills — 15 connector integrations plus 5 built-in skills plus Bring Your Own MCP, organized by category with descriptions and use cases.
+> A directory of the connectors and skills in xAI's [Grok Connectors](https://grok.com/connectors) and Grok Skills — 30 connector integrations plus 5 built-in skills plus Bring Your Own MCP, organized by category with descriptions, use cases, and hosted-MCP server endpoints for catalog connectors.
 
-**Version:** v0.1.9 | **Last updated:** July 23, 2026 | **Total connectors:** 15 | **Built-in skills:** 5 | **Categories:** 7 | **BYO MCP:** supported
+**Version:** v0.2.0 | **Last updated:** July 23, 2026 | **Total connectors:** 30 | **Built-in skills:** 5 | **Categories:** 10 | **BYO MCP:** supported
 
 See [CHANGELOG.md](CHANGELOG.md) for the full release history.
 
@@ -10,30 +10,33 @@ Grok connectors are OAuth-authenticated integrations that let Grok read and writ
 
 [Grok Skills](https://x.ai/news/grok-skills) launched May 18, 2026 as a second primitive: persistent expertise that Grok remembers across every conversation. Each account ships with built-in skills for office documents (Word, PowerPoint, Excel, PDF) plus a Skill Creator for building your own. Skills run on Grok 4.3 across web, iOS, and Android.
 
-> **Scope note:** This list covers connectors and skills explicitly named in xAI's public documentation and launch announcements. xAI's May 11, 2026 follow-up announcement referenced "20+ connectors" — the full catalog (beyond the named built-in set, the named catalog connectors with dedicated setup guides, and the public callouts) requires a logged-in Grok session to enumerate. Additional catalog entries will be folded in as they're publicly documented.
+> **Scope note:** As of July 23, 2026 this list covers the full in-app connector catalog — enumerated tile-by-tile from a logged-in grok.com/connectors session (26 catalog tiles, resolving xAI's long-standing "20+ connectors" reference) — plus the xAI-maintained built-ins documented at docs.x.ai. The catalog is MCP-based end to end: third-party tiles are hosted MCP servers whose endpoints the in-app detail view exposes, recorded per entry below. Business and Enterprise connectors (OneDrive, SharePoint, Salesforce) are provisioned by a team admin and may not appear in a consumer session's picker; they remain listed per the official docs. The raw enumeration snapshot lives in [data/grok-catalog-2026-07-23.md](data/grok-catalog-2026-07-23.md).
 
 For more information, see the [Connectors Documentation](https://docs.x.ai/grok/connectors), the in-product catalog at grok.com/connectors (linked above), and the [launch announcement](https://x.ai/news/grok-connectors).
 
-Connectors marked with **`X`** are built and maintained by xAI.
+Connectors marked with **`X`** are built and maintained by xAI. Connectors marked with **`C`** are third-party tiles from the in-app connector catalog (enumerated July 23, 2026) — hosted MCP servers that xAI surfaces but does not build or maintain; entries note the server endpoint where the catalog exposes one.
 
 This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 > **Disclaimer:** This is a free, public, community-maintained list. Not affiliated with, endorsed by, or sponsored by Grok, xAI Corp, SpaceX, or any Musk-affiliated entity. "Grok" and related marks are the property of xAI Corp. Each connector is the property of its respective owner. No fees, no paid placement, no commercial relationship with any vendor listed.
 
 > [!TIP]
-> ### Connector of the Week — July 21, 2026
+> ### Connector of the Week — July 23, 2026
 >
-> **Automations in Grok** · *Adjacent surface that makes connectors sticky*
+> **X Ads** · *The catalog cracked open*
 >
-> On July 16, 2026, xAI shipped Automations on grok.com and mobile: describe a recurring job once, attach connectors and skills, `@`-mention tools so they run every time. No new named connector this window (built-in docs table still Gmail/Calendar through Salesforce; catalog still behind login), but Automations is the first scheduling primitive that turns the existing connector set into standing work rather than one-off chat. Same week: Grok 4.5, Grok Build open-sourced, and Grok for Excel + Outlook add-ins (see Beyond the Chat).
+> First full enumeration of the in-app connector catalog (logged-in session, all 26 tiles — the "20+ connectors" xAI referenced in May, finally itemized): fifteen connectors join the list, and X Ads headlines. It gives Grok access to your X ad campaigns — view campaigns, ad groups, and ads, update creatives, or create new ones with Imagine — with xAI stating it does not train on your Ads data. It lands the same week Grok itself went into X Ads Manager in beta (see Beyond the Chat): xAI is wiring its assistant into its own ads economy from both ends. Also new: Stripe, Figma, Canva, Box, Vercel, Google Cloud BigQuery, S&P Global, Webull, Calendly, Gamma, Excalidraw, Mixpanel, Meltwater, and HyperFrames by HeyGen.
 
 ---
 
 ## Contents
 
+- [Advertising](#advertising)
+- [Analytics](#analytics)
 - [Calendar and Scheduling](#calendar-and-scheduling)
 - [Communication](#communication)
 - [CRM and Sales](#crm-and-sales)
+- [Design and Creative](#design-and-creative)
 - [Development Tools](#development-tools)
 - [Documents and Files](#documents-and-files)
 - [Finance and Trading](#finance-and-trading)
@@ -45,8 +48,20 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 
 ---
 
+## Advertising
+
+- [X Ads](https://ads.x.com) **`C`** - Give Grok access to your X ad campaigns: view campaigns, ad groups, and ads — and update creatives or create new ads with Imagine. xAI states it does not train on X Ads data and that Grok only reads or changes ads when you ask. *Use case: Checking campaign performance from chat, adjusting a running ad group, generating fresh creatives without opening Ads Manager.*
+
+
+## Analytics
+
+- [Google Cloud BigQuery](https://cloud.google.com/bigquery) **`C`** - Query BigQuery from chat through Google's hosted MCP server (`bigquery.googleapis.com/mcp`); connecting requires supplying your own Google Cloud OAuth client credentials. *Use case: Ad-hoc warehouse questions in plain English, sanity-checking a metric without opening the console.*
+- [Mixpanel](https://mixpanel.com) **`C`** - Product-analytics data via Mixpanel's hosted MCP server (`mcp.mixpanel.com/mcp`). *Use case: Pulling funnel, retention, and event trends into a conversation.*
+
+
 ## Calendar and Scheduling
 
+- [Calendly](https://calendly.com) **`C`** - Check availability, schedule and cancel meetings, and manage your Calendly event types and invitees (hosted MCP server: `mcp.calendly.com`). *Use case: Booking a meeting from chat, checking the day's calls, rescheduling without opening the app.*
 - [Google Calendar](https://calendar.google.com) **`X`** - Search, create, and update events in your Google Calendar. *Use case: Checking free/busy time, scheduling meetings inside a chat, RSVPing to invites, surfacing the day's agenda.*
 - [Outlook Calendar](https://outlook.live.com/calendar) **`X`** - Manage Microsoft Outlook calendar events with delegated mailbox permissions. *Use case: Drafting calendar invites, finding meeting conflicts across work calendars, triaging accepted vs declined events.*
 
@@ -61,18 +76,30 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 
 ## CRM and Sales
 
-- [HubSpot](https://www.hubspot.com) - Read-only access to HubSpot CRM data including contacts, companies, deals, and tickets via the [xAI MCP setup guide](https://docs.x.ai/integrations/hubspot-mcp-setup). *Use case: Summarizing open deals over a threshold, surfacing account activity, ranking pipeline by stage, drafting outreach from deal context.*
+- [HubSpot](https://www.hubspot.com) **`C`** - Read-only access to HubSpot CRM data including contacts, companies, deals, and tickets via the [xAI MCP setup guide](https://docs.x.ai/integrations/hubspot-mcp-setup). *Use case: Summarizing open deals over a threshold, surfacing account activity, ranking pipeline by stage, drafting outreach from deal context.*
+- [Meltwater](https://www.meltwater.com) **`C`** - Media and social intelligence through Meltwater's hosted MCP server (`api.meltwater.com/v2/mcp`): search billions of news articles and social posts, retrieve live metrics, trends, and sentiment, generate Boolean queries, and manage saved searches. *Use case: Brand-mention monitoring from chat, sentiment pulls on a launch, building media briefs from live coverage.*
 - [Salesforce](https://www.salesforce.com) **`X`** - Explore Salesforce objects, query records, and create or update CRM data. *Use case: Pulling account history, updating opportunity stages from chat, querying custom objects, generating call-prep briefs.*
+
+
+## Design and Creative
+
+- [Canva](https://www.canva.com) **`C`** - Connect your Canva account through Canva's hosted MCP server (`mcp.canva.com/mcp`). *Use case: Referencing and working with Canva designs from a conversation.*
+- [Excalidraw](https://excalidraw.com) **`C`** - Virtual whiteboard and diagramming via Excalidraw's hosted MCP server (`mcp.excalidraw.com/mcp`). *Use case: Turning a chat-side idea into a shareable sketch or diagram.*
+- [Figma](https://www.figma.com) **`C`** - Access Figma files and design data, letting Grok understand designs and generate flowcharts, code, and UI implementations (hosted MCP server: `mcp.figma.com/mcp`). *Use case: Asking questions of a design file, turning frames into implementation-ready code.*
+- [Gamma](https://gamma.app) **`C`** - Connect Gamma's AI presentation and document builder via its hosted MCP server (`mcp.gamma.app/mcp`). *Use case: Drafting deck content in chat and carrying it into Gamma-generated presentations.*
+- [HyperFrames by HeyGen](https://hyperframes.heygen.com) **`C`** - HeyGen's open-source HTML-to-video framework — write HTML, render deterministic frame-by-frame video, built for agents — via its hosted MCP server (`mcp.heygen.com/mcp/hyperframes/`). *Use case: Composing and editing programmatic video from a conversation.*
 
 
 ## Development Tools
 
-- [GitHub](https://github.com) - Connect repositories, issues, and pull requests for code search, PR review, and development workflow context. *Use case: Summarizing pull requests, reviewing diffs, searching across code, drafting issue descriptions, triaging backlog.*
-- [Linear](https://linear.app) - Connect Linear workspace to bring tasks, issues, roadmaps, and projects into Grok. *Use case: Searching the backlog, summarizing sprint progress, drafting status updates, creating new issues from chat.*
+- [GitHub](https://github.com) **`C`** - Search repositories and code, explore file trees and directory structures, manage repositories (branches, releases, issues, PRs), view notifications, and perform actions like starring or pushing files — served through GitHub's Copilot MCP endpoint (`api.githubcopilot.com/mcp/x/all`). *Use case: Summarizing pull requests, reviewing diffs, searching across code, drafting issue descriptions, triaging backlog.*
+- [Linear](https://linear.app) **`C`** - Connect Linear workspace to bring tasks, issues, roadmaps, and projects into Grok. *Use case: Searching the backlog, summarizing sprint progress, drafting status updates, creating new issues from chat.*
+- [Vercel](https://vercel.com) **`C`** - Connect your Vercel projects and deployments via Vercel's hosted MCP server (`mcp.vercel.com`). *Use case: Checking deploy status and project state from chat.*
 
 
 ## Documents and Files
 
+- [Box](https://www.box.com) **`C`** - Cloud content storage via Box's hosted MCP server (`mcp.box.com`). *Use case: Searching and referencing Box files in a conversation, pulling document context into an answer.*
 - [Google Drive](https://drive.google.com) **`X`** - Search, read, create, and manage files across personal and shared Google Drive. *Use case: Analyzing spreadsheets without leaving chat, drafting and writing Google Docs, organizing folders, uploading Grok-generated artifacts to Drive.*
 - [OneDrive](https://onedrive.live.com) **`X`** - Access personal and shared files in Microsoft OneDrive. *Use case: Reading and analyzing OneDrive spreadsheets, presentations, and reports, surfacing relevant files for a given task.*
 - [SharePoint](https://www.microsoft.com/microsoft-365/sharepoint) **`X`** - Search, read, synthesize, and (with write permissions) edit files, lists, and pages across SharePoint sites. *Use case: Organization-wide document search, editing pages and lists, surfacing the latest version of policies, generating reports from SharePoint data.*
@@ -80,12 +107,15 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 
 ## Finance and Trading
 
-- [Interactive Brokers](https://www.interactivebrokers.com) - Link an existing IBKR account to analyze your portfolio, model exposures, research markets, and generate reviewable order instructions across equities, ETFs, options, and futures in natural language. No new account, no passwords or API keys shared. *Use case: Surfacing portfolio exposures and concentration, scenario-modeling sector and region risk, drafting hedges and options strategies as order instructions held in an AI Instructions tab for your approval before execution.*
+- [Interactive Brokers](https://www.interactivebrokers.com) **`C`** - Link an existing IBKR account to analyze your portfolio, model exposures, research markets, and generate reviewable order instructions across equities, ETFs, options, and futures in natural language. No new account, no passwords or API keys shared. Hosted MCP server: `api.ibkr.com/v1/api/mcp`. *Use case: Surfacing portfolio exposures and concentration, scenario-modeling sector and region risk, drafting hedges and options strategies as order instructions held in an AI Instructions tab for your approval before execution.*
+- [S&P Global](https://www.spglobal.com) **`C`** - Financial data and research served through Kensho, S&P Global's AI arm (hosted MCP server: `kfinance.kensho.com/integrations/mcp`). *Use case: Pulling company fundamentals and market context into an analysis conversation.*
+- [Stripe](https://stripe.com) **`C`** - Look up payments, customers, and invoices in your Stripe account (hosted MCP server: `mcp.stripe.com`). *Use case: Checking whether an invoice was paid, summarizing recent payment activity, pulling a customer's history.*
+- [Webull](https://www.webull.com) **`C`** - Connect your Webull brokerage account via its hosted MCP server (`api.webull.com/mcp`). *Use case: Reviewing positions and market data in a conversation.*
 
 
 ## Productivity
 
-- [Notion](https://www.notion.so) - Search and edit pages, databases, and wikis across personal or team Notion workspaces. *Use case: Querying the team wiki, drafting and updating pages, querying structured Notion databases, summarizing project notes.*
+- [Notion](https://www.notion.so) **`C`** - Search and edit pages, databases, and wikis across personal or team Notion workspaces (hosted MCP server: `mcp.notion.com/mcp`). *Use case: Querying the team wiki, drafting and updating pages, querying structured Notion databases, summarizing project notes.*
 
 
 ## Bring Your Own MCP
@@ -109,7 +139,7 @@ Skills marked with **`X`** are built and maintained by xAI.
 - [Presentations](https://www.microsoft.com/microsoft-365/powerpoint) **`X`** - Build slide decks from scratch with visual hierarchy and speaker notes. *Use case: Pitch decks, quarterly reviews, workshop materials with exercises, frameworks, and takeaways.*
 - [Spreadsheets](https://www.microsoft.com/microsoft-365/excel) **`X`** - Generate formatted spreadsheets with formulas, color-coded sections, and clear structure. Analyze data inline. *Use case: Budgets, dashboards, forecasts, and monthly trackers with income/expenses/savings projections.*
 - [PDFs](https://www.adobe.com/acrobat/about-adobe-pdf.html) **`X`** - Create, merge, split, and extract from PDFs. Style and format for share-ready output. *Use case: Polished PDF reports, proposals, and research papers formatted for conference or stakeholder submission.*
-- [Skill Creator](https://grok.com) **`X`** - Build new custom skills through conversation. *Use case: Capture a perfected workflow once and reuse it across every future chat — describe it, upload a file, or write it from scratch.*
+- [Skill Creator](https://grok.com/skills) **`X`** - Build new custom skills through conversation. *Use case: Capture a perfected workflow once and reuse it across every future chat — describe it, upload a file, or write it from scratch.*
 
 
 ## Beyond the Chat
@@ -124,7 +154,7 @@ This list catalogs what Grok can connect *to* inside a conversation. Mid-2026 xA
 
 **Automations.** [Automations in Grok](https://x.ai/news/grok-automations) (July 16) let you describe a recurring job once, attach connectors and skills, and `@`-mention tools so they run on a schedule on web and mobile. Not a new connector — a scheduling layer over the ones already listed.
 
-**Grok in X Ads Manager.** Rolling out in early access since ~July 9, 2026 to a limited advertiser group ([trade coverage](https://www.socialmediatoday.com/news/x-adds-grok-powered-insights-to-ads-manager/825497/), July 16): Grok embedded in [X Ads Manager](https://ads.x.com) — ask Grok about campaign performance, inline AI tooltips and insights across the manager, and AI-generated ad creatives. No first-party x.ai announcement yet; beta scope may shift by general availability.
+**Grok in X Ads Manager.** Rolling out in early access since ~July 9, 2026 to a limited advertiser group ([trade coverage](https://www.socialmediatoday.com/news/x-adds-grok-powered-insights-to-ads-manager/825497/), July 16): Grok embedded in X Ads Manager itself — campaign Q&A, inline AI tooltips and insights across the manager, and AI-generated ad creatives. The mirror image of the X Ads chat connector listed above: the connector brings ads data into Grok; this puts Grok inside the ads product. No first-party x.ai announcement yet; beta scope may shift by general availability.
 
 **Grok 4.5.** [Introducing Grok 4.5](https://x.ai/news/grok-4-5) (July 16) — model release for coding, agentic tasks, and knowledge work. Not a connector surface, but the runtime those connectors and skills ride on.
 
