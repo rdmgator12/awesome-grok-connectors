@@ -1,8 +1,8 @@
-# Awesome List for Grok Connectors [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome List for Grok Connectors [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Last Commit](https://img.shields.io/github/last-commit/rdmgator12/awesome-grok-connectors)](https://github.com/rdmgator12/awesome-grok-connectors/commits/main)
 
 > A directory of the publicly documented connectors and skills in xAI's [Grok Connectors](https://grok.com/connectors) and Grok Skills — 15 connector integrations plus 5 built-in skills plus Bring Your Own MCP, organized by category with descriptions and use cases.
 
-**Version:** v0.1.8 | **Last updated:** July 21, 2026 | **Total connectors:** 15 | **Built-in skills:** 5 | **Categories:** 7 | **BYO MCP:** supported
+**Version:** v0.1.9 | **Last updated:** July 23, 2026 | **Total connectors:** 15 | **Built-in skills:** 5 | **Categories:** 7 | **BYO MCP:** supported
 
 See [CHANGELOG.md](CHANGELOG.md) for the full release history.
 
@@ -25,7 +25,7 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 >
 > **Automations in Grok** · *Adjacent surface that makes connectors sticky*
 >
-> On July 16, 2026, xAI shipped [Automations](https://x.ai/news/grok-automations) on grok.com and mobile: describe a recurring job once, attach connectors and skills, `@`-mention tools so they run every time. No new named connector this window (built-in docs table still Gmail/Calendar through Salesforce; catalog still behind login), but Automations is the first scheduling primitive that turns the existing connector set into standing work rather than one-off chat. Same week: Grok 4.5, Grok Build open-sourced, and Grok for Excel + Outlook add-ins (see Beyond the Chat).
+> On July 16, 2026, xAI shipped Automations on grok.com and mobile: describe a recurring job once, attach connectors and skills, `@`-mention tools so they run every time. No new named connector this window (built-in docs table still Gmail/Calendar through Salesforce; catalog still behind login), but Automations is the first scheduling primitive that turns the existing connector set into standing work rather than one-off chat. Same week: Grok 4.5, Grok Build open-sourced, and Grok for Excel + Outlook add-ins (see Beyond the Chat).
 
 ---
 
@@ -124,13 +124,15 @@ This list catalogs what Grok can connect *to* inside a conversation. Mid-2026 xA
 
 **Automations.** [Automations in Grok](https://x.ai/news/grok-automations) (July 16) let you describe a recurring job once, attach connectors and skills, and `@`-mention tools so they run on a schedule on web and mobile. Not a new connector — a scheduling layer over the ones already listed.
 
+**Grok in X Ads Manager.** Rolling out in early access since ~July 9, 2026 to a limited advertiser group ([trade coverage](https://www.socialmediatoday.com/news/x-adds-grok-powered-insights-to-ads-manager/825497/), July 16): Grok embedded in [X Ads Manager](https://ads.x.com) — ask Grok about campaign performance, inline AI tooltips and insights across the manager, and AI-generated ad creatives. No first-party x.ai announcement yet; beta scope may shift by general availability.
+
 **Grok 4.5.** [Introducing Grok 4.5](https://x.ai/news/grok-4-5) (July 16) — model release for coding, agentic tasks, and knowledge work. Not a connector surface, but the runtime those connectors and skills ride on.
 
 
 ## Related
 
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Community-maintained directory of MCP servers across all clients.
-- [awesome-claude-connectors](https://github.com/rdmgator12/awesome-claude-connectors) - Anthropic Claude connectors directory (500+ entries).
+- [awesome-claude-connectors](https://github.com/rdmgator12/awesome-claude-connectors) - Anthropic Claude connectors directory.
 - [awesome-claude-plugins](https://github.com/rdmgator12/awesome-claude-plugins) - Claude Code plugins directory.
 - [anthropic-in-public](https://github.com/rdmgator12/anthropic-in-public) - Independent archive of public talks by Anthropic team members.
 - [xai-in-public](https://github.com/rdmgator12/xai-in-public) - Independent archive of public talks, demos, and essays by xAI / Grok (sister site to anthropic-in-public).

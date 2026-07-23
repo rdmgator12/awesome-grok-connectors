@@ -4,6 +4,23 @@ All notable changes to this list are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows [SemVer](https://semver.org/spec/v2.0.0.html). Pre-1.0.0, minor-level changes can include additions and structural moves; patch-level changes are corrections, polish, and lint fixes.
 
+## [0.1.9] - 2026-07-23
+
+### Added
+- `Beyond the Chat` gained **Grok in X Ads Manager** — early-access rollout since ~July 9, 2026 to a limited advertiser beta (campaign Q&A, inline AI insights, AI-generated ad creatives). Trade-press sourced (Social Media Today, July 16; first sighted by TestingCatalog July 9); no first-party x.ai post yet — upgrade the link when one lands.
+- Auto-updating last-commit badge in the README header (freshness visible without a hand-typed date), matching the sibling Claude lists.
+
+### Changed
+- Related: `awesome-claude-connectors` entry is now count-free — the hand-typed count went stale twice (398+ → 500+ → actual 841); the sibling repo now carries its own live badge.
+- README header bumped: version v0.1.9, `Last updated` July 23, 2026. Connector totals unchanged (15).
+
+### Fixed
+- Pre-existing awesome-lint double-link shipped in v0.1.8: the Connector of the Week block AND Beyond the Chat both hyperlinked x.ai/news/grok-automations. De-linked the COTW mention per the of-the-week convention (pick's name never hyperlinked); the link lives in Beyond the Chat. v0.1.8 went out red because admin pushes bypass the required lint check.
+
+### Notes
+- Connector of the Week stays **Automations in Grok** (July 21) — same calendar week, and a limited ads beta is a weaker pick than the shipped scheduling surface.
+- Verified live against x.ai/news and the docs.x.ai sitemap (fetched 2026-07-23): no post newer than Grok for Outlook (July 21); built-in connector table unchanged (Gmail & Google Calendar through Salesforce); still no new catalog connector with a dedicated setup guide beyond HubSpot. Full catalog still requires a logged-in Grok session. Side note: x.ai/news now brands as "SpaceXAI" post-acquisition — existing disclaimer already covers SpaceX.
+
 ## [0.1.8] - 2026-07-21
 
 ### Added
