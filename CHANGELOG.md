@@ -4,6 +4,15 @@ All notable changes to this list are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows [SemVer](https://semver.org/spec/v2.0.0.html). Pre-1.0.0, minor-level changes can include additions and structural moves; patch-level changes are corrections, polish, and lint fixes.
 
+## [0.2.1] - 2026-07-30
+
+### Added
+- **Bring Your Own MCP:** [Simple Inventory Management](https://simpleinventorymanagement.com) — public hosted MCP server (`simpleinventorymanagement.com/mcp`) for reading and updating live stock over OAuth. Listed under BYO MCP (not an in-app catalog tile); add via grok.com/connectors → New Connector → Custom.
+
+### Changed
+- BYO MCP section reframed from a single X-server prose note into an alphabetized list of notable public hosted MCP servers (Simple Inventory Management + X hosted MCP), with the same entry format as catalog connectors.
+- README header: v0.2.1, `Last updated` July 30, 2026. Catalog connector total unchanged (30).
+
 ## [0.2.0] - 2026-07-23
 
 ### Added

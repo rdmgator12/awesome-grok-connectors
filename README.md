@@ -2,7 +2,7 @@
 
 > A directory of the connectors and skills in xAI's [Grok Connectors](https://grok.com/connectors) and Grok Skills — 30 connector integrations plus 5 built-in skills plus Bring Your Own MCP, organized by category with descriptions, use cases, and hosted-MCP server endpoints for catalog connectors.
 
-**Version:** v0.2.0 | **Last updated:** July 23, 2026 | **Total connectors:** 30 | **Built-in skills:** 5 | **Categories:** 10 | **BYO MCP:** supported
+**Version:** v0.2.1 | **Last updated:** July 30, 2026 | **Total connectors:** 30 | **Built-in skills:** 5 | **Categories:** 10 | **BYO MCP:** supported
 
 See [CHANGELOG.md](CHANGELOG.md) for the full release history.
 
@@ -124,9 +124,12 @@ Grok supports custom Model Context Protocol servers. Any MCP server reachable ov
 
 For setup, authentication patterns, and local-server tunneling guidance, see the Custom MCP connectors documentation linked from the launch post above.
 
-The highest-profile public server you can add this way: X's official hosted MCP server (launched June 30, 2026), exposing 200+ X API endpoints — posts, search, users, bookmarks, trends — documented at [docs.x.com/mcp](https://docs.x.com/mcp).
+Notable public hosted MCP servers you can add this way (not part of the in-app catalog; paste the URL under Custom):
 
-Looking for MCP servers to connect? See the awesome-mcp-servers list in the Related section below for a broad community-maintained directory that should work with Grok's BYO MCP surface.
+- [Simple Inventory Management](https://simpleinventorymanagement.com) - Cloud inventory for small businesses with a built-in OAuth MCP server (`simpleinventorymanagement.com/mcp`) for reading and updating live stock from chat. *Use case: Checking items below reorder point, recording receipts and count adjustments, drafting a reorder list without opening the app.*
+- [X hosted MCP](https://docs.x.com/mcp) - X's official hosted MCP server (launched June 30, 2026), exposing 200+ X API endpoints — posts, search, users, bookmarks, trends. *Use case: Searching posts and trends from chat, pulling user or bookmark context into a conversation.*
+
+Looking for more MCP servers to connect? See the awesome-mcp-servers list in the Related section below for a broad community-maintained directory that should work with Grok's BYO MCP surface.
 
 
 ## Skills
