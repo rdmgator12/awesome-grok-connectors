@@ -126,6 +126,8 @@ For setup, authentication patterns, and local-server tunneling guidance, see the
 
 The highest-profile public server you can add this way: X's official hosted MCP server (launched June 30, 2026), exposing 200+ X API endpoints — posts, search, users, bookmarks, trends — documented at [docs.x.com/mcp](https://docs.x.com/mcp).
 
+Another public, no-auth example: [RateZip Bank Deposit and Mortgage Rates](https://www.ratezip.com/methodology) (`https://mcp.ratezip.com/mcp`, streamable HTTP) - live US savings, CD, mortgage, and HELOC rates, each figure carrying its source and observation timestamp; also published in the official MCP Registry as `com.ratezip/rates`. *Use case: asking Grok for current top savings APYs or mortgage and HELOC rates with sources, without leaving chat.*
+
 Looking for MCP servers to connect? See the awesome-mcp-servers list in the Related section below for a broad community-maintained directory that should work with Grok's BYO MCP surface.
 
 
