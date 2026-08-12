@@ -4,6 +4,26 @@ All notable changes to this list are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning follows [SemVer](https://semver.org/spec/v2.0.0.html). Pre-1.0.0, minor-level changes can include additions and structural moves; patch-level changes are corrections, polish, and lint fixes.
 
+## [0.3.0] - 2026-08-12
+
+### Added
+- **Wix** (Featured) and **etoro** (Finance) from the 2026-08-12 in-app rail capture. Catalog tiles 26 → 28. Wix description uses Wix's public MCP (`mcp.wix.com/mcp`); eToro modal/endpoint not captured this pass.
+- New **Featured**, **Developer**, **Finance**, **Sales**, and **Business and Enterprise** rails so the README matches the app. Mixpanel sits under Developer (as the rail shows), not Analytics.
+- Related: [awesome-grok-bot-plugins](https://github.com/rdmgator12/awesome-grok-bot-plugins). Beyond the Chat: Grok Bot (August 11).
+- Snapshot: `data/grok-catalog-2026-08-12.md`.
+
+### Changed
+- README remapped from functional categories to the in-app rails. Outlook Mail renamed **Outlook** to match the tile.
+- Connector of the Week: **Wix**.
+- Header: v0.3.0, 31 connectors (28 in-app + 3 docs-only built-ins), 8 rails.
+
+### Removed
+- **Slack** — failed the two-surface test held since 2026-07-23 (absent from the picker and from the docs.x.ai built-in table, re-fetched 2026-08-12).
+
+### Notes
+- OneDrive, SharePoint, Salesforce remain listed under Business and Enterprise; docs table unchanged.
+- No modal pass this sweep. Linear and HubSpot still lack recorded MCP endpoints. eToro needs a modal capture next time.
+
 ## [0.2.0] - 2026-07-23
 
 ### Added

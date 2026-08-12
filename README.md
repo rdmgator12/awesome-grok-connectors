@@ -1,8 +1,8 @@
 # Awesome List for Grok Connectors [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Last Commit](https://img.shields.io/github/last-commit/rdmgator12/awesome-grok-connectors)](https://github.com/rdmgator12/awesome-grok-connectors/commits/main)
 
-> A directory of the connectors and skills in xAI's [Grok Connectors](https://grok.com/connectors) and Grok Skills — 30 connector integrations plus 5 built-in skills plus Bring Your Own MCP, organized by category with descriptions, use cases, and hosted-MCP server endpoints for catalog connectors.
+> A directory of the connectors and skills in xAI's [Grok Connectors](https://grok.com/connectors) and Grok Skills — 31 connector integrations plus 5 built-in skills plus Bring Your Own MCP, organized by the in-app catalog rails with descriptions, use cases, and hosted-MCP server endpoints where the catalog exposes them.
 
-**Version:** v0.2.0 | **Last updated:** July 23, 2026 | **Total connectors:** 30 | **Built-in skills:** 5 | **Categories:** 10 | **BYO MCP:** supported
+**Version:** v0.3.0 | **Last updated:** August 12, 2026 | **Total connectors:** 31 | **In-app catalog:** 28 | **Built-in skills:** 5 | **Categories:** 8 | **BYO MCP:** supported
 
 See [CHANGELOG.md](CHANGELOG.md) for the full release history.
 
@@ -10,37 +10,35 @@ Grok connectors are OAuth-authenticated integrations that let Grok read and writ
 
 [Grok Skills](https://x.ai/news/grok-skills) launched May 18, 2026 as a second primitive: persistent expertise that Grok remembers across every conversation. Each account ships with built-in skills for office documents (Word, PowerPoint, Excel, PDF) plus a Skill Creator for building your own. Skills run on Grok 4.3 across web, iOS, and Android.
 
-> **Scope note:** As of July 23, 2026 this list covers the full in-app connector catalog — enumerated tile-by-tile from a logged-in grok.com/connectors session (26 catalog tiles, resolving xAI's long-standing "20+ connectors" reference) — plus the xAI-maintained built-ins documented at docs.x.ai. The catalog is MCP-based end to end: third-party tiles are hosted MCP servers whose endpoints the in-app detail view exposes, recorded per entry below. Business and Enterprise connectors (OneDrive, SharePoint, Salesforce) are provisioned by a team admin and may not appear in a consumer session's picker; they remain listed per the official docs. The raw enumeration snapshot lives in [data/grok-catalog-2026-07-23.md](data/grok-catalog-2026-07-23.md).
+> **Scope note:** As of August 12, 2026 this list follows the in-app rails from a logged-in grok.com/connectors session — 28 catalog tiles (26 from the July 23 enumeration plus Wix and eToro) — plus the three xAI built-ins that still live only in the docs.x.ai table (OneDrive, SharePoint, Salesforce). The catalog is MCP-based end to end; endpoints recorded on July 23 are kept where the modal captured them. Slack failed the two-surface test (absent from the picker and from the docs table) and is removed. Raw capture: [data/grok-catalog-2026-08-12.md](data/grok-catalog-2026-08-12.md).
 
 For more information, see the [Connectors Documentation](https://docs.x.ai/grok/connectors), the in-product catalog at grok.com/connectors (linked above), and the [launch announcement](https://x.ai/news/grok-connectors).
 
-Connectors marked with **`X`** are built and maintained by xAI. Connectors marked with **`C`** are third-party tiles from the in-app connector catalog (enumerated July 23, 2026) — hosted MCP servers that xAI surfaces but does not build or maintain; entries note the server endpoint where the catalog exposes one.
+Connectors marked with **`X`** are built and maintained by xAI. Connectors marked with **`C`** are third-party tiles from the in-app connector catalog — hosted MCP servers that xAI surfaces but does not build or maintain; entries note the server endpoint where a prior modal capture exposed one.
 
 This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 > **Disclaimer:** This is a free, public, community-maintained list. Not affiliated with, endorsed by, or sponsored by Grok, xAI Corp, SpaceX, or any Musk-affiliated entity. "Grok" and related marks are the property of xAI Corp. Each connector is the property of its respective owner. No fees, no paid placement, no commercial relationship with any vendor listed.
 
 > [!TIP]
-> ### Connector of the Week — July 23, 2026
+> ### Connector of the Week — August 12, 2026
 >
-> **X Ads** · *The catalog cracked open*
+> **Wix** · *Featured, and new*
 >
-> First full enumeration of the in-app connector catalog (logged-in session, all 26 tiles — the "20+ connectors" xAI referenced in May, finally itemized): fifteen connectors join the list, and X Ads headlines. It gives Grok access to your X ad campaigns — view campaigns, ad groups, and ads, update creatives, or create new ones with Imagine — with xAI stating it does not train on your Ads data. It lands the same week Grok itself went into X Ads Manager in beta (see Beyond the Chat): xAI is wiring its assistant into its own ads economy from both ends. Also new: Stripe, Figma, Canva, Box, Vercel, Google Cloud BigQuery, S&P Global, Webull, Calendly, Gamma, Excalidraw, Mixpanel, Meltwater, and HyperFrames by HeyGen.
+> The in-app catalog grew from 26 tiles to 28. Wix lands in Featured — Wix's hosted MCP (`mcp.wix.com/mcp`) lets Grok search Wix docs, generate platform code, and call site APIs. Same sweep: eToro joins Finance next to IBKR, S&P Global, and Webull. Slack is gone (never in the picker, never in the docs table). Composed from the August 12 rail capture, not a modal pass — if a Wix or eToro modal shows a tighter capability line, send it.
 
 ---
 
 ## Contents
 
+- [Featured](#featured)
 - [Advertising](#advertising)
 - [Analytics](#analytics)
-- [Calendar and Scheduling](#calendar-and-scheduling)
-- [Communication](#communication)
-- [CRM and Sales](#crm-and-sales)
-- [Design and Creative](#design-and-creative)
-- [Development Tools](#development-tools)
-- [Documents and Files](#documents-and-files)
-- [Finance and Trading](#finance-and-trading)
+- [Developer](#developer)
+- [Finance](#finance)
 - [Productivity](#productivity)
+- [Sales](#sales)
+- [Business and Enterprise](#business-and-enterprise)
 - [Bring Your Own MCP](#bring-your-own-mcp)
 - [Skills](#skills)
 - [Beyond the Chat](#beyond-the-chat)
@@ -48,74 +46,69 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 
 ---
 
+## Featured
+
+- [Box](https://www.box.com) **`C`** - Cloud content storage via Box's hosted MCP server (`mcp.box.com`). *Use case: Searching and referencing Box files in a conversation, pulling document context into an answer.*
+- [Canva](https://www.canva.com) **`C`** - Connect your Canva account through Canva's hosted MCP server (`mcp.canva.com/mcp`). *Use case: Referencing and working with Canva designs from a conversation.*
+- [GitHub](https://github.com) **`C`** - Search repositories and code, explore file trees and directory structures, manage repositories (branches, releases, issues, PRs), view notifications, and perform actions like starring or pushing files - served through GitHub's Copilot MCP endpoint (`api.githubcopilot.com/mcp/x/all`). *Use case: Summarizing pull requests, reviewing diffs, searching across code, drafting issue descriptions, triaging backlog.*
+- [Gmail](https://mail.google.com) **`X`** - Search, summarize, draft, and send messages across your Gmail inbox. *Use case: Triaging the inbox, composing context-aware replies, summarizing long threads, finding specific past conversations.*
+- [Google Calendar](https://calendar.google.com) **`X`** - Search, create, and update events in your Google Calendar. *Use case: Checking free/busy time, scheduling meetings inside a chat, RSVPing to invites, surfacing the day's agenda.*
+- [Google Drive](https://drive.google.com) **`X`** - Search, read, create, and manage files across personal and shared Google Drive. *Use case: Analyzing spreadsheets without leaving chat, drafting and writing Google Docs, organizing folders, uploading Grok-generated artifacts to Drive.*
+- [Notion](https://www.notion.so) **`C`** - Search and edit pages, databases, and wikis across personal or team Notion workspaces (hosted MCP server: `mcp.notion.com/mcp`). *Use case: Querying the team wiki, drafting and updating pages, querying structured Notion databases, summarizing project notes.*
+- [Stripe](https://stripe.com) **`C`** - Look up payments, customers, and invoices in your Stripe account (hosted MCP server: `mcp.stripe.com`). *Use case: Checking whether an invoice was paid, summarizing recent payment activity, pulling a customer's history.*
+- [Vercel](https://vercel.com) **`C`** - Connect your Vercel projects and deployments via Vercel's hosted MCP server (`mcp.vercel.com`). *Use case: Checking deploy status and project state from chat.*
+- [Wix](https://www.wix.com) **`C`** - Connect a Wix site through Wix's hosted MCP server (`mcp.wix.com/mcp`) to search Wix docs, generate platform code, and call site APIs. *Use case: Checking a live site, updating business content, asking how a Wix API works.*
+
+
 ## Advertising
 
-- [X Ads](https://ads.x.com) **`C`** - Give Grok access to your X ad campaigns: view campaigns, ad groups, and ads — and update creatives or create new ads with Imagine. xAI states it does not train on X Ads data and that Grok only reads or changes ads when you ask. *Use case: Checking campaign performance from chat, adjusting a running ad group, generating fresh creatives without opening Ads Manager.*
+- [X Ads](https://ads.x.com) **`C`** - Give Grok access to your X ad campaigns: view campaigns, ad groups, and ads - and update creatives or create new ads with Imagine. xAI states it does not train on X Ads data and that Grok only reads or changes ads when you ask. *Use case: Checking campaign performance from chat, adjusting a running ad group, generating fresh creatives without opening Ads Manager.*
 
 
 ## Analytics
 
 - [Google Cloud BigQuery](https://cloud.google.com/bigquery) **`C`** - Query BigQuery from chat through Google's hosted MCP server (`bigquery.googleapis.com/mcp`); connecting requires supplying your own Google Cloud OAuth client credentials. *Use case: Ad-hoc warehouse questions in plain English, sanity-checking a metric without opening the console.*
+
+
+## Developer
+
+- [Excalidraw](https://excalidraw.com) **`C`** - Virtual whiteboard and diagramming via Excalidraw's hosted MCP server (`mcp.excalidraw.com/mcp`). *Use case: Turning a chat-side idea into a shareable sketch or diagram.*
 - [Mixpanel](https://mixpanel.com) **`C`** - Product-analytics data via Mixpanel's hosted MCP server (`mcp.mixpanel.com/mcp`). *Use case: Pulling funnel, retention, and event trends into a conversation.*
 
 
-## Calendar and Scheduling
+## Finance
 
-- [Calendly](https://calendly.com) **`C`** - Check availability, schedule and cancel meetings, and manage your Calendly event types and invitees (hosted MCP server: `mcp.calendly.com`). *Use case: Booking a meeting from chat, checking the day's calls, rescheduling without opening the app.*
-- [Google Calendar](https://calendar.google.com) **`X`** - Search, create, and update events in your Google Calendar. *Use case: Checking free/busy time, scheduling meetings inside a chat, RSVPing to invites, surfacing the day's agenda.*
-- [Outlook Calendar](https://outlook.live.com/calendar) **`X`** - Manage Microsoft Outlook calendar events with delegated mailbox permissions. *Use case: Drafting calendar invites, finding meeting conflicts across work calendars, triaging accepted vs declined events.*
-
-
-## Communication
-
-- [Gmail](https://mail.google.com) **`X`** - Search, summarize, draft, and send messages across your Gmail inbox. *Use case: Triaging the inbox, composing context-aware replies, summarizing long threads, finding specific past conversations.*
-- [Microsoft Teams](https://www.microsoft.com/microsoft-teams) **`X`** - Read messages, channels, and chats across your Microsoft Teams workspace. *Use case: Searching channel history, pulling thread context into a Grok answer, surfacing what was said about a topic across team chats.*
-- [Outlook Mail](https://outlook.live.com) **`X`** - Search and act on Microsoft Outlook email with delegated mailbox permissions. *Use case: Inbox triage, drafting replies in your voice, finding attachments and threads, summarizing newsletters and notifications.*
-- [Slack](https://slack.com) - Search and read Slack channels, DMs, and threads connected to your workspace. *Use case: Pulling decision context from past conversations, summarizing channel activity, finding specific files or links shared in chat.*
-
-
-## CRM and Sales
-
-- [HubSpot](https://www.hubspot.com) **`C`** - Read-only access to HubSpot CRM data including contacts, companies, deals, and tickets via the [xAI MCP setup guide](https://docs.x.ai/integrations/hubspot-mcp-setup). *Use case: Summarizing open deals over a threshold, surfacing account activity, ranking pipeline by stage, drafting outreach from deal context.*
-- [Meltwater](https://www.meltwater.com) **`C`** - Media and social intelligence through Meltwater's hosted MCP server (`api.meltwater.com/v2/mcp`): search billions of news articles and social posts, retrieve live metrics, trends, and sentiment, generate Boolean queries, and manage saved searches. *Use case: Brand-mention monitoring from chat, sentiment pulls on a launch, building media briefs from live coverage.*
-- [Salesforce](https://www.salesforce.com) **`X`** - Explore Salesforce objects, query records, and create or update CRM data. *Use case: Pulling account history, updating opportunity stages from chat, querying custom objects, generating call-prep briefs.*
-
-
-## Design and Creative
-
-- [Canva](https://www.canva.com) **`C`** - Connect your Canva account through Canva's hosted MCP server (`mcp.canva.com/mcp`). *Use case: Referencing and working with Canva designs from a conversation.*
-- [Excalidraw](https://excalidraw.com) **`C`** - Virtual whiteboard and diagramming via Excalidraw's hosted MCP server (`mcp.excalidraw.com/mcp`). *Use case: Turning a chat-side idea into a shareable sketch or diagram.*
-- [Figma](https://www.figma.com) **`C`** - Access Figma files and design data, letting Grok understand designs and generate flowcharts, code, and UI implementations (hosted MCP server: `mcp.figma.com/mcp`). *Use case: Asking questions of a design file, turning frames into implementation-ready code.*
-- [Gamma](https://gamma.app) **`C`** - Connect Gamma's AI presentation and document builder via its hosted MCP server (`mcp.gamma.app/mcp`). *Use case: Drafting deck content in chat and carrying it into Gamma-generated presentations.*
-- [HyperFrames by HeyGen](https://hyperframes.heygen.com) **`C`** - HeyGen's open-source HTML-to-video framework — write HTML, render deterministic frame-by-frame video, built for agents — via its hosted MCP server (`mcp.heygen.com/mcp/hyperframes/`). *Use case: Composing and editing programmatic video from a conversation.*
-
-
-## Development Tools
-
-- [GitHub](https://github.com) **`C`** - Search repositories and code, explore file trees and directory structures, manage repositories (branches, releases, issues, PRs), view notifications, and perform actions like starring or pushing files — served through GitHub's Copilot MCP endpoint (`api.githubcopilot.com/mcp/x/all`). *Use case: Summarizing pull requests, reviewing diffs, searching across code, drafting issue descriptions, triaging backlog.*
-- [Linear](https://linear.app) **`C`** - Connect Linear workspace to bring tasks, issues, roadmaps, and projects into Grok. *Use case: Searching the backlog, summarizing sprint progress, drafting status updates, creating new issues from chat.*
-- [Vercel](https://vercel.com) **`C`** - Connect your Vercel projects and deployments via Vercel's hosted MCP server (`mcp.vercel.com`). *Use case: Checking deploy status and project state from chat.*
-
-
-## Documents and Files
-
-- [Box](https://www.box.com) **`C`** - Cloud content storage via Box's hosted MCP server (`mcp.box.com`). *Use case: Searching and referencing Box files in a conversation, pulling document context into an answer.*
-- [Google Drive](https://drive.google.com) **`X`** - Search, read, create, and manage files across personal and shared Google Drive. *Use case: Analyzing spreadsheets without leaving chat, drafting and writing Google Docs, organizing folders, uploading Grok-generated artifacts to Drive.*
-- [OneDrive](https://onedrive.live.com) **`X`** - Access personal and shared files in Microsoft OneDrive. *Use case: Reading and analyzing OneDrive spreadsheets, presentations, and reports, surfacing relevant files for a given task.*
-- [SharePoint](https://www.microsoft.com/microsoft-365/sharepoint) **`X`** - Search, read, synthesize, and (with write permissions) edit files, lists, and pages across SharePoint sites. *Use case: Organization-wide document search, editing pages and lists, surfacing the latest version of policies, generating reports from SharePoint data.*
-
-
-## Finance and Trading
-
-- [Interactive Brokers](https://www.interactivebrokers.com) **`C`** - Link an existing IBKR account to analyze your portfolio, model exposures, research markets, and generate reviewable order instructions across equities, ETFs, options, and futures in natural language. No new account, no passwords or API keys shared. Hosted MCP server: `api.ibkr.com/v1/api/mcp`. *Use case: Surfacing portfolio exposures and concentration, scenario-modeling sector and region risk, drafting hedges and options strategies as order instructions held in an AI Instructions tab for your approval before execution.*
+- [etoro](https://www.etoro.com) **`C`** - Connect an eToro account from the in-app Finance rail. Modal text and MCP endpoint were not captured this sweep. *Use case: Checking positions or market context in a conversation.*
+- [Interactive Brokers (IBKR)](https://www.interactivebrokers.com) **`C`** - Link an existing IBKR account to analyze your portfolio, model exposures, research markets, and generate reviewable order instructions across equities, ETFs, options, and futures in natural language. No new account, no passwords or API keys shared. Hosted MCP server: `api.ibkr.com/v1/api/mcp`. *Use case: Surfacing portfolio exposures and concentration, scenario-modeling sector and region risk, drafting hedges and options strategies as order instructions held in an AI Instructions tab for your approval before execution.*
 - [S&P Global](https://www.spglobal.com) **`C`** - Financial data and research served through Kensho, S&P Global's AI arm (hosted MCP server: `kfinance.kensho.com/integrations/mcp`). *Use case: Pulling company fundamentals and market context into an analysis conversation.*
-- [Stripe](https://stripe.com) **`C`** - Look up payments, customers, and invoices in your Stripe account (hosted MCP server: `mcp.stripe.com`). *Use case: Checking whether an invoice was paid, summarizing recent payment activity, pulling a customer's history.*
 - [Webull](https://www.webull.com) **`C`** - Connect your Webull brokerage account via its hosted MCP server (`api.webull.com/mcp`). *Use case: Reviewing positions and market data in a conversation.*
 
 
 ## Productivity
 
-- [Notion](https://www.notion.so) **`C`** - Search and edit pages, databases, and wikis across personal or team Notion workspaces (hosted MCP server: `mcp.notion.com/mcp`). *Use case: Querying the team wiki, drafting and updating pages, querying structured Notion databases, summarizing project notes.*
+- [Calendly](https://calendly.com) **`C`** - Check availability, schedule and cancel meetings, and manage your Calendly event types and invitees (hosted MCP server: `mcp.calendly.com`). *Use case: Booking a meeting from chat, checking the day's calls, rescheduling without opening the app.*
+- [Figma](https://www.figma.com) **`C`** - Access Figma files and design data, letting Grok understand designs and generate flowcharts, code, and UI implementations (hosted MCP server: `mcp.figma.com/mcp`). *Use case: Asking questions of a design file, turning frames into implementation-ready code.*
+- [Gamma](https://gamma.app) **`C`** - Connect Gamma's AI presentation and document builder via its hosted MCP server (`mcp.gamma.app/mcp`). *Use case: Drafting deck content in chat and carrying it into Gamma-generated presentations.*
+- [HyperFrames by HeyGen](https://hyperframes.heygen.com) **`C`** - HeyGen's open-source HTML-to-video framework - write HTML, render deterministic frame-by-frame video, built for agents - via its hosted MCP server (`mcp.heygen.com/mcp/hyperframes/`). *Use case: Composing and editing programmatic video from a conversation.*
+- [Linear](https://linear.app) **`C`** - Connect Linear workspace to bring tasks, issues, roadmaps, and projects into Grok. *Use case: Searching the backlog, summarizing sprint progress, drafting status updates, creating new issues from chat.*
+- [Microsoft Teams](https://www.microsoft.com/microsoft-teams) **`X`** - Read messages, channels, and chats across your Microsoft Teams workspace. *Use case: Searching channel history, pulling thread context into a Grok answer, surfacing what was said about a topic across team chats.*
+- [Outlook](https://outlook.live.com) **`X`** - Search and act on Microsoft Outlook email with delegated mailbox permissions. *Use case: Inbox triage, drafting replies in your voice, finding attachments and threads, summarizing newsletters and notifications.*
+- [Outlook Calendar](https://outlook.live.com/calendar) **`X`** - Manage Microsoft Outlook calendar events with delegated mailbox permissions. *Use case: Drafting calendar invites, finding meeting conflicts across work calendars, triaging accepted vs declined events.*
+
+
+## Sales
+
+- [HubSpot](https://www.hubspot.com) **`C`** - Read-only access to HubSpot CRM data including contacts, companies, deals, and tickets via the [xAI MCP setup guide](https://docs.x.ai/integrations/hubspot-mcp-setup). *Use case: Summarizing open deals over a threshold, surfacing account activity, ranking pipeline by stage, drafting outreach from deal context.*
+- [Meltwater](https://www.meltwater.com) **`C`** - Media and social intelligence through Meltwater's hosted MCP server (`api.meltwater.com/v2/mcp`): search billions of news articles and social posts, retrieve live metrics, trends, and sentiment, generate Boolean queries, and manage saved searches. *Use case: Brand-mention monitoring from chat, sentiment pulls on a launch, building media briefs from live coverage.*
+
+
+## Business and Enterprise
+
+These three are in the docs.x.ai built-in table (fetched 2026-08-12) but not in this consumer-session picker. A team admin must provision them in the cloud console. They stay listed.
+
+- [OneDrive](https://onedrive.live.com) **`X`** - Access personal and shared files in Microsoft OneDrive. *Use case: Reading and analyzing OneDrive spreadsheets, presentations, and reports, surfacing relevant files for a given task.*
+- [Salesforce](https://www.salesforce.com) **`X`** - Explore Salesforce objects, query records, and create or update CRM data. *Use case: Pulling account history, updating opportunity stages from chat, querying custom objects, generating call-prep briefs.*
+- [SharePoint](https://www.microsoft.com/microsoft-365/sharepoint) **`X`** - Search, read, synthesize, and (with write permissions) edit files, lists, and pages across SharePoint sites. *Use case: Organization-wide document search, editing pages and lists, surfacing the latest version of policies, generating reports from SharePoint data.*
 
 
 ## Bring Your Own MCP
@@ -148,7 +141,9 @@ This list catalogs what Grok can connect *to* inside a conversation. Mid-2026 xA
 
 **Microsoft Office / Outlook add-ins.** [Grok for PowerPoint](https://x.ai/news/introducing-powerpoint-addin) (June 16), [Grok for Word](https://x.ai/news/introducing-word-addin) (June 18), [Grok for Excel](https://x.ai/news/introducing-excel-addin) (July 20), and [Grok for Outlook](https://x.ai/news/introducing-outlook-addin) (July 21) embed Grok *inside* the Microsoft apps as free Microsoft 365 add-ins. They can themselves leverage connectors — for example, drafting from SharePoint or Google Drive. Distinct from the chat-side document Skills of the same names: Skills generate files chat-side; add-ins put Grok in the app.
 
-**Grok Build, Plugin Marketplace, and open source.** [Grok Build](https://x.ai/news/grok-build-cli) is xAI's terminal coding agent; its [Plugin Marketplace](https://x.ai/news/grok-plugin-marketplace) (June 11, open repo `xai-org/plugin-marketplace`) bundles skills, commands, agents, hooks, MCP servers, and LSPs. On July 15, xAI [open-sourced Grok Build](https://x.ai/news/grok-build-open-source) so the harness (skills, plugins, hooks, MCP, subagents) is readable source. That plugin ecosystem is a separate primitive from chat connectors and would belong in a sibling list.
+**Grok Build, Plugin Marketplace, and open source.** [Grok Build](https://x.ai/news/grok-build-cli) is xAI's terminal coding agent; its [Plugin Marketplace](https://x.ai/news/grok-plugin-marketplace) (June 11, open repo `xai-org/plugin-marketplace`) bundles skills, commands, agents, hooks, MCP servers, and LSPs. On July 15, xAI [open-sourced Grok Build](https://x.ai/news/grok-build-open-source) so the harness (skills, plugins, hooks, MCP, subagents) is readable source. That plugin ecosystem is a separate primitive from chat connectors.
+
+**Grok Bot.** [Introducing Grok Bot](https://x.ai/news/introducing-grok-bot) (August 11, early beta) is xAI's cloud-computer teammate product, Cursor-hosted. Its plugin catalog is a different surface from grok.com/connectors and is tracked in awesome-grok-bot-plugins (see Related).
 
 **Voice Agent Builder.** [Voice Agent Builder](https://x.ai/news/grok-voice-agent-builder) (July 1, beta) is xAI's no-code platform for production voice agents on Grok Voice. It reuses the connector family: Google Calendar, Outlook Calendar, Linear, Notion, Google Drive, OneDrive, custom APIs, and MCP — with SIP telephony, knowledge collections, guardrails, and $0.05/min pricing.
 
@@ -162,6 +157,7 @@ This list catalogs what Grok can connect *to* inside a conversation. Mid-2026 xA
 ## Related
 
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Community-maintained directory of MCP servers across all clients.
+- [awesome-grok-bot-plugins](https://github.com/rdmgator12/awesome-grok-bot-plugins) - Grok Bot in-app plugin catalog (Cursor Marketplace), a different xAI surface.
 - [awesome-claude-connectors](https://github.com/rdmgator12/awesome-claude-connectors) - Anthropic Claude connectors directory.
 - [awesome-claude-plugins](https://github.com/rdmgator12/awesome-claude-plugins) - Claude Code plugins directory.
 - [anthropic-in-public](https://github.com/rdmgator12/anthropic-in-public) - Independent archive of public talks by Anthropic team members.
