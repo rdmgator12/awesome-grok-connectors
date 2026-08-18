@@ -62,6 +62,7 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 
 ## Advertising
 
+- [AdsAgent Meta MCP](https://adsagent.md/docs/mcp-onboarding) **`C`** - Hosted Meta advertising MCP at `https://adsagent.md/mcp/v2`: bounded insights reads, templates, async tasks, and confirmation-gated campaign writes. OAuth 2.0 with dynamic client registration (RFC 7591); streamable HTTP MCP. *Use case: Checking product or campaign performance from chat, preparing Meta ad operations with explicit human approval before any write.*
 - [X Ads](https://ads.x.com) **`C`** - Give Grok access to your X ad campaigns: view campaigns, ad groups, and ads - and update creatives or create new ads with Imagine. xAI states it does not train on X Ads data and that Grok only reads or changes ads when you ask. *Use case: Checking campaign performance from chat, adjusting a running ad group, generating fresh creatives without opening Ads Manager.*
 
 
